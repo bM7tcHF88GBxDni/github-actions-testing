@@ -1,6 +1,10 @@
 ### Github Action
 
-Some research notes (https://docs.github.com/en/actions/using-workflows):
+## Objective:
+
+Learn how to use GitHub Actions for CI/CD/CD.
+
+Research notes (https://docs.github.com/en/actions/using-workflows):
 
 - configure a workflow to be triggered when an event occurs in your repository e.g a pull request being opened or an issue being created
 - workflows contain jobs that can run in order or in parallel
@@ -17,7 +21,7 @@ Some research notes (https://docs.github.com/en/actions/using-workflows):
 - workflows can be reused within workflows
 - can have one workflow to build and test pull requests, another workflow to deploy every time a release is created
 
-Actions
+### Actions
 
 - custom app for the GHA platform that does a frequently repeated task. Use an action to help reduce the amount repetitive code you write in your workflow files
 
@@ -32,7 +36,7 @@ Write workflows in .yml extension. For example:
 Writing yml files: https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions
 
 ```yml
-name: learn-github-actions #comments
+name: learn-github-actions
 on: [push] #triggers workflow on push or PR merge to any branch of this repo
 jobs: #each runner can have one job
   check-bats-version: #job name, below key:values are job properties
@@ -42,7 +46,7 @@ jobs: #each runner can have one job
       - uses: actions/setup-node@v2 #action that setups up node and npm
         with:
           node-version: "14"
-      - run: npm install -g bats #scripts to get project dependencies installed
+      - run: npm install -g bats #scripts to get project dependencies installed, this would just be npm install as the project should have all dependencies in package.json
       - run: bats -v #in a project, this would be like npm start. this example is like `node -v` and just returns the bats dependency version installed
 ```
 
