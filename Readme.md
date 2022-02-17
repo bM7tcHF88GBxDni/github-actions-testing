@@ -1,6 +1,6 @@
-### Github Action
+## Github Actions
 
-## Objective:
+### Objective:
 
 Learn how to use GitHub Actions for CI/CD/CD.
 
@@ -23,7 +23,7 @@ Research notes (https://docs.github.com/en/actions/using-workflows):
 
 ### Actions
 
-- custom app for the GHA platform that does a frequently repeated task. Use an action to help reduce the amount repetitive code you write in your workflow files
+- custom app/plugin for the GHA platform that does a frequently repeated task. Use an action to help reduce the amount repetitive code you write in your workflow files
 
 ### Writing Workflows: https://docs.github.com/en/actions/using-workflows
 
@@ -52,3 +52,10 @@ jobs: #each runner can have one job
 
 Visualising this `gha-testing.yml` file:
 ![](https://docs.github.com/assets/cb-33984/images/help/images/overview-actions-event.png)
+
+### Viewing the workflow's activity: https://docs.github.com/en/actions/learn-github-actions/understanding-github-actions#viewing-the-workflows-activity
+
+- Actions tab in repository
+- Left sidebar, select a workflow
+- Under Jobs or in the visualization graph, select a job
+- Click on each step to view the results of that step
