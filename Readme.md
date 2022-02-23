@@ -37,7 +37,7 @@ Just because Continuous Deployment can be done doesn’t mean that every set of 
 
 - configure a `workflow` to be triggered when an `event` occurs in your repository e.g a pull request being opened or an issue being created
 - `workflows` contain `jobs` that can run in order (a job is dependent on previous job) or in parallel
-  - each job will run inside its own Virtual Machine (VM) or container, this is referred to as a `runner`. one `runner` can do one `job`
+  - each job will run inside its own Virtual Machine (VM) or container, this is referred to as a `runner`. one `runner` can do multiple `jobs`
   - `jobs` contain `steps` to
     - run `scripts`
     - run `actions` (reusable extension that can simplify our workflow)
