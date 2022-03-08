@@ -1,6 +1,13 @@
 # GitHub Actions R&D
 
-Research and test GitHub Actions to implement CI/CD/CD.
+I lead the implementation of a CI/CD pipeline in our School of Code final 4 week project:
+
+- Continuous Testing implemented when a Pull Request is opened to merge into dev or main
+- Implemented unit tests (Jest) and integration tests (React Testing Library and SuperTest)
+- API tests use test environment variables automatically which means tests run on a database setup specifically for testing
+  - testing database is destroyed and rebuilt before every test runs
+
+This repository contains independent research and testing GitHub Actions that I also used to upskill the team and help a few other students at School of Code.
 
 <details>
 <summary>
