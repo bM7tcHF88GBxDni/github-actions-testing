@@ -1,13 +1,13 @@
 # GitHub Actions R&D
 
-I lead the implementation of a CI/CD pipeline in our School of Code final 4 week project:
+This repository contains independent research and testing GitHub Actions that I also used to upskill the team and help a few other students at School of Code. I lead the implementation of a CI/CD pipeline in our School of Code final 4 week project. 
 
 - Continuous Testing implemented when a Pull Request is opened to merge into dev or main
-- Implemented unit tests (Jest) and integration tests (React Testing Library and SuperTest)
-- API tests use test environment variables automatically which means tests run on a database setup specifically for testing
-  - testing database is destroyed and rebuilt before every test runs
-
-This repository contains independent research and testing GitHub Actions that I also used to upskill the team and help a few other students at School of Code.
+  - Implemented unit tests (Jest) and integration tests (React Testing Library and SuperTest)
+  - API tests use test environment variables automatically which means tests run on a database setup specifically for testing
+    - testing database is destroyed and rebuilt before every test runs
+- When main or dev branches are updated, frontend deploys production and development sites automatically to Netlify. Backend deploys production and development APIs and database servers automatically to Heroku. 
+- When a PR is opened, Netlify deploys a preview of the PR build
 
 <details>
 <summary>
